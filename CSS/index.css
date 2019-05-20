@@ -1,0 +1,115 @@
+html {
+  margin: 5%;
+}
+html body {
+  font-family: 'Bitter', serif;
+  display: flex;
+  flex-flow: column nowrap;
+}
+@media (max-width: 500px) {
+  html body {
+    width: 100%;
+  }
+}
+html body .mission-statement {
+  text-align: center;
+  padding: 3% 15%;
+}
+html body .mission-statement p {
+  font-size: 0.8rem;
+}
+html body button {
+  background-color: #B52020;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: 'Bitter', serif;
+  margin: 2%;
+}
+html body footer {
+  text-align: center;
+  font-size: 0.6rem;
+}
+.nav-bar {
+  margin-bottom: 40px;
+  position: sticky;
+}
+.nav-bar .nav {
+  width: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-bar .nav img {
+  max-height: 40px;
+  width: auto;
+}
+.nav-bar .nav .nav-items {
+  width: 50%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 0.8rem;
+}
+.nav-bar .nav .nav-items a {
+  text-decoration: none;
+  color: #4e86da;
+}
+.nav-bar .nav .nav-items div {
+  color: #4e86da;
+}
+.main-content {
+  background-image: url("../Images/Group.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 40%;
+  margin-bottom: 10px;
+}
+.main-content h1 {
+  color: #ffffff;
+  padding: 0 3%;
+}
+.main-content .btn-1 {
+  padding: 0 2%;
+}
+.story-content {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  color: white;
+}
+.story-content div {
+  width: 33%;
+  text-align: center;
+}
+.story-content .story-1 {
+  background-image: url("../Images/danny-postma-336034-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.story-content .story-2 {
+  background-image: url("../Images/bruno-nascimento-255461-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.story-content .story-3 {
+  background-image: url("../Images/bailey-torres-677237-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.more-content {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 10%;
+  margin: 10px 0;
+}
+.more-content h5,
+.more-content p {
+  margin: 0;
+}
