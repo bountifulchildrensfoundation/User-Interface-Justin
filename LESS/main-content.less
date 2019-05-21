@@ -3,14 +3,41 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     // background: lightgrey;
-    height: 40%;
+    height: 50%;
     margin-bottom: 10px;
 
+    @media @mobile {
+        display: flex;
+        flex-flow: column;
+        // justify-content: space-around;
+        align-items: center;
+    }
+
     h1 {
-        color: rgb(255, 255, 255);
+        color: #FBF5F3;
         padding: 0 3%;
+
+        @media @mobile {
+            font-size: 1.4rem;
+        }
     }
     .btn-1 {
         padding: 0 2%;
+        @media @mobile {
+            margin-top: 80px;
+        }
+    }
+}
+
+.mission-statement {
+    text-align: center;
+    padding: 0 15%;
+
+    h2 {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 0.8rem;
     }
 }

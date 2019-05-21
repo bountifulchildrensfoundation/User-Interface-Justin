@@ -5,37 +5,50 @@ html body {
   font-family: 'Bitter', serif;
   display: flex;
   flex-flow: column nowrap;
+  background-color: #FBF5F3;
+  color: #2C406F;
 }
 @media (max-width: 500px) {
   html body {
     width: 100%;
   }
 }
-html body .mission-statement {
-  text-align: center;
-  padding: 3% 15%;
-}
-html body .mission-statement p {
-  font-size: 0.8rem;
-}
 html body button {
   background-color: #B52020;
-  color: white;
+  color: #FBF5F3;
   padding: 15px 20px;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid #FBF5 F;
   font-size: 0.8rem;
   font-weight: bold;
   font-family: 'Bitter', serif;
   margin: 2%;
 }
+@media (max-width: 500px) {
+  html body button {
+    padding: 10px 35px;
+    margin: 0;
+  }
+}
 html body footer {
+  padding-top: 10px;
   text-align: center;
   font-size: 0.6rem;
 }
+html body hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+}
 .nav-bar {
   margin-bottom: 40px;
-  position: sticky;
+}
+@media (max-width: 500px) {
+  .nav-bar {
+    margin-bottom: 10px;
+  }
 }
 .nav-bar .nav {
   width: auto;
@@ -43,6 +56,11 @@ html body footer {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-bar .nav {
+    flex-flow: column;
+  }
 }
 .nav-bar .nav img {
   max-height: 40px;
@@ -56,26 +74,65 @@ html body footer {
   padding: 0 20px;
   font-size: 0.8rem;
 }
+@media (max-width: 500px) {
+  .nav-bar .nav .nav-items {
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 .nav-bar .nav .nav-items a {
   text-decoration: none;
-  color: #4e86da;
+  color: #2C406F;
+}
+@media (max-width: 500px) {
+  .nav-bar .nav .nav-items a {
+    padding: 5px;
+  }
 }
 .nav-bar .nav .nav-items div {
-  color: #4e86da;
+  color: #2C406F;
 }
 .main-content {
   background-image: url("../Images/Group.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  height: 40%;
+  height: 50%;
   margin-bottom: 10px;
 }
+@media (max-width: 500px) {
+  .main-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
 .main-content h1 {
-  color: #ffffff;
+  color: #FBF5F3;
   padding: 0 3%;
+}
+@media (max-width: 500px) {
+  .main-content h1 {
+    font-size: 1.4rem;
+  }
 }
 .main-content .btn-1 {
   padding: 0 2%;
+}
+@media (max-width: 500px) {
+  .main-content .btn-1 {
+    margin-top: 80px;
+  }
+}
+.mission-statement {
+  text-align: center;
+  padding: 0 15%;
+}
+.mission-statement h2 {
+  font-weight: bold;
+}
+.mission-statement p {
+  font-size: 0.8rem;
 }
 .story-content {
   display: flex;
@@ -83,9 +140,22 @@ html body footer {
   justify-content: space-between;
   color: white;
 }
+@media (max-width: 500px) {
+  .story-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
 .story-content div {
   width: 33%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .story-content div {
+    width: 85%;
+    margin: 1%;
+  }
 }
 .story-content .story-1 {
   background-image: url("../Images/danny-postma-336034-unsplash.jpg");
@@ -112,4 +182,7 @@ html body footer {
 .more-content h5,
 .more-content p {
   margin: 0;
+}
+.more-stories img {
+  max-width: 100%;
 }

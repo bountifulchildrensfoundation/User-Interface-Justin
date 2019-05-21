@@ -1,7 +1,9 @@
 .nav-bar{
     margin-bottom: 40px;
-    position: sticky;
-    
+    // position: sticky;
+    @media @mobile {
+        margin-bottom: 10px;
+    }
     .nav {
         width: auto;
         display: flex;
@@ -9,6 +11,10 @@
         justify-content: space-between;
         align-items: center;
         // background-color: #f7c3cb;
+
+        @media @mobile {
+            flex-flow: column;
+        }
 
         img {
           max-height: 40px;
@@ -23,15 +29,24 @@
         padding: 0 20px;
         font-size: .8rem;
 
+        @media @mobile {
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
             a {
             text-decoration: none;
-            color: rgb(78, 134, 218)
+            color: #2C406F;
+            @media @mobile {
+                padding: 5px;
+            }
             }
             div {
-               color: rgb(78, 134, 218);
+               color:#2C406F;
             }
          }
     
     
-}
+        }
 }

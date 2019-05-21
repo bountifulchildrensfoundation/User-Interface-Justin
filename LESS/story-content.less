@@ -4,11 +4,22 @@
     justify-content: space-between;
     color: white;
 
+    @media @mobile {
+        display: flex; 
+        flex-flow: column;
+        align-items: center;
+    }
+
     div {
         // background:lightgray;
         // margin: 10px;
         width: 33%;
         text-align: center;
+    
+        @media @mobile {
+            width: 85%;
+            margin: 1%;
+        }
         
     }
 
