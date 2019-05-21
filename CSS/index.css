@@ -90,8 +90,35 @@ html body hr {
     padding: 5px;
   }
 }
-.nav-bar .nav .nav-items div {
+.nav-bar .nav .nav-items a .dropdown {
+  z-index: 2;
+  position: absolute;
+  left: 25px;
+  cursor: pointer;
+}
+.nav-bar .nav .nav-items a .dropdown .dropdown-button {
   color: #2C406F;
+}
+.nav-bar .nav .nav-items a .dropdown .dropdown-button:hover {
+  color: red;
+}
+.nav-bar .nav .nav-items a .dropdown .dropdown-content {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.nav-bar .nav .nav-items a .dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  text-decoration: none;
+}
+.nav-bar .nav .nav-items a .dropdown .dropdown-hidden {
+  display: none;
 }
 .main-content {
   background-image: url("../Images/Group.png");
@@ -138,7 +165,8 @@ html body hr {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  color: white;
+  color: #FBF5F3;
+  margin-bottom: 10px;
 }
 .story-content h2 {
   margin: 15px 0;
@@ -156,8 +184,9 @@ html body hr {
 }
 .story-content div {
   width: 33%;
-  height: 250px;
+  height: 141px;
   text-align: center;
+  transition: 0.6s;
 }
 @media (max-width: 500px) {
   .story-content div {
@@ -170,15 +199,33 @@ html body hr {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+.story-content .story-1:hover {
+  transform: scale(1.2);
+  background-image: url("../Images/danny-postma-336034-unsplash.jpg");
+  z-index: 1;
+  box-shadow: 2px 2px 2px #507DBC;
+}
 .story-content .story-2 {
   background-image: url("../Images/bruno-nascimento-255461-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+.story-content .story-2:hover {
+  transform: scale(1.2);
+  background-image: url("../Images/bruno-nascimento-255461-unsplash.jpg");
+  z-index: 1;
+  box-shadow: 2px 2px 2px #507DBC;
+}
 .story-content .story-3 {
   background-image: url("../Images/bailey-torres-677237-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+.story-content .story-3:hover {
+  transform: scale(1.2);
+  background-image: url("../Images/bailey-torres-677237-unsplash.jpg");
+  z-index: 1;
+  box-shadow: 2px 2px 2px #507DBC;
 }
 .more-content {
   display: flex;
@@ -197,12 +244,13 @@ html body hr {
 .about-us {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .about-us .person {
   border: 1px solid #2C406F;
-  width: 175px;
-  height: 175px;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
   margin: 20px 5px;
   background-color: #507DBC;
   color: #FBF5F3;
