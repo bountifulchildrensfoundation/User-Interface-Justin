@@ -140,6 +140,13 @@ html body hr {
   justify-content: space-between;
   color: white;
 }
+.story-content h2 {
+  margin: 15px 0;
+}
+.story-content p {
+  font-size: 0.8rem;
+  margin: 1.5px;
+}
 @media (max-width: 500px) {
   .story-content {
     display: flex;
@@ -149,11 +156,12 @@ html body hr {
 }
 .story-content div {
   width: 33%;
+  height: 250px;
   text-align: center;
 }
 @media (max-width: 500px) {
   .story-content div {
-    width: 85%;
+    width: 80%;
     margin: 1%;
   }
 }
@@ -193,7 +201,9 @@ html body hr {
 }
 .about-us .person {
   border: 1px solid #2C406F;
-  width: 150px;
-  height: 150px;
-  margin: 20px;
+  width: 175px;
+  height: 175px;
+  margin: 20px 5px;
+  background-color: #507DBC;
+  color: #FBF5F3;
 }
