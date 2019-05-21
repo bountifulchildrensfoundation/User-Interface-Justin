@@ -13,7 +13,13 @@ html body {
     width: 100%;
   }
 }
-html body button {
+html body .donate {
+  background-color: #B52020;
+  color: #fbf5f3;
+  padding: 7px;
+  font-family: 'Bitter', serif;
+}
+html body .tell-us {
   background-color: #B52020;
   color: #FBF5F3;
   padding: 15px 20px;
@@ -25,15 +31,23 @@ html body button {
   margin: 2%;
 }
 @media (max-width: 500px) {
-  html body button {
+  html body .tell-us {
     padding: 10px 35px;
     margin: 0;
   }
+}
+html body button:hover {
+  background-color: #011638;
 }
 html body footer {
   padding-top: 10px;
   text-align: center;
   font-size: 0.6rem;
+}
+html body footer:hover {
+  transform: scale(1.2);
+  z-index: 1;
+  box-shadow: 2px 2px 2px #507DBC;
 }
 html body hr {
   display: block;
@@ -71,6 +85,7 @@ html body hr {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   font-size: 0.8rem;
 }
@@ -89,36 +104,6 @@ html body hr {
   .nav-bar .nav .nav-items a {
     padding: 5px;
   }
-}
-.nav-bar .nav .nav-items a .dropdown {
-  z-index: 2;
-  position: absolute;
-  left: 25px;
-  cursor: pointer;
-}
-.nav-bar .nav .nav-items a .dropdown .dropdown-button {
-  color: #2C406F;
-}
-.nav-bar .nav .nav-items a .dropdown .dropdown-button:hover {
-  color: red;
-}
-.nav-bar .nav .nav-items a .dropdown .dropdown-content {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 10px;
-}
-.nav-bar .nav .nav-items a .dropdown .dropdown-link {
-  width: 100%;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 18px;
-  text-decoration: none;
-}
-.nav-bar .nav .nav-items a .dropdown .dropdown-hidden {
-  display: none;
 }
 .main-content {
   background-image: url("../Images/Group.png");
@@ -154,6 +139,7 @@ html body hr {
 .mission-statement {
   text-align: center;
   padding: 0 15%;
+  margin-bottom: 20px;
 }
 .mission-statement h2 {
   font-weight: bold;
@@ -169,7 +155,7 @@ html body hr {
   margin-bottom: 10px;
 }
 .story-content h2 {
-  margin: 15px 0;
+  margin: 25px 0;
 }
 .story-content p {
   font-size: 0.8rem;
@@ -186,6 +172,8 @@ html body hr {
   width: 33%;
   height: 141px;
   text-align: center;
+  -webkit-clip-path: polygon(50% 0%, 100% 41%, 100% 100%, 0 100%, 0 40%);
+  clip-path: polygon(50% 0%, 100% 41%, 100% 100%, 0 100%, 0 40%);
   transition: 0.6s;
 }
 @media (max-width: 500px) {
@@ -238,8 +226,16 @@ html body hr {
 .more-content p {
   margin: 0;
 }
+.more-stories {
+  height: 176.44px;
+}
 .more-stories img {
   max-width: 100%;
+}
+.more-stories:hover {
+  transform: scale(1.1);
+  z-index: 0;
+  box-shadow: 2px 2px 2px #507DBC;
 }
 .about-us {
   display: flex;

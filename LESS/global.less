@@ -14,8 +14,13 @@ body {
     @media @mobile {
           width: 100%;
     }
-
-    button {
+    .donate{
+        background-color: #B52020;
+        color: #fbf5f3;
+        padding: 7px;
+        font-family: 'Bitter', serif;
+    }
+    .tell-us {
         background-color: #B52020;
         color: #FBF5F3;
         padding: 15px 20px;
@@ -33,10 +38,20 @@ body {
 
     }
 
+    button:hover {
+        background-color: #011638;
+    }
+
     footer {
         padding-top: 10px;
         text-align: center;
         font-size: 0.6rem;
+    }
+    footer:hover {
+        transform: scale(1.2);
+        // background-image: url("../Images/danny-postma-336034-unsplash.jpg");
+        z-index: 1;
+        box-shadow: 2px 2px 2px #507DBC;	
     }
 
     hr {
@@ -46,5 +61,5 @@ body {
         border-top: 1px solid #ccc;
         margin: 1em 0;
     }
-}
+    }
 }
