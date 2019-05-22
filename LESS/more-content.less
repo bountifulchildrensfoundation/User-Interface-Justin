@@ -5,8 +5,55 @@
     height: 10%;
     margin: 10px 0;
 
+    .button:hover {
+        color: #507DBC;
+    }
+
     h5, p {
+        text-align: center;
         margin:0
+    }
+
+
+    .drop-content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        color: #FBF5F3;
+
+        @media @mobile {
+            display: flex; 
+            flex-flow: column;
+            align-items: center;
+        }
+
+        div {
+            margin: 10px 20px;
+            background-color: #507DBC;
+            height: 150px;
+            width: 140px;
+
+            h3{
+                padding: 0 10px;
+            }
+            p{
+                font-size: 0.8rem;
+                padding: 0 10px;
+                text-align: left;
+            }
+        }
+        div:hover {
+            transform: scale(1.2);
+            background-color: #2C406F;
+		    z-index: 1;
+		    box-shadow: 2px 2px 2px #507DBC;	
+        }
+
+
+    }
+
+    .dropdown-hidden {
+        display: none;
     }
 }
 
@@ -18,7 +65,5 @@
 }
 .more-stories:hover {
     transform: scale(1.1);
-    // background-image: url("../Images/danny-postma-336034-unsplash.jpg");
-    z-index: 0;
-    box-shadow: 2px 2px 2px #507DBC;	
+    z-index: 1;
 }
