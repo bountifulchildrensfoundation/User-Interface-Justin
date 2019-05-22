@@ -1,5 +1,5 @@
 html {
-  margin: 5%;
+  margin: 0 5% 0 5%;
 }
 html body {
   font-family: 'Bitter', serif;
@@ -40,7 +40,7 @@ html body button:hover {
   background-color: #011638;
 }
 html body footer {
-  padding-top: 10px;
+  margin-top: 60px;
   text-align: center;
   font-size: 0.6rem;
 }
@@ -178,35 +178,35 @@ html body hr {
   }
 }
 .story-content .story-1 {
-  background-image: url("../Images/danny-postma-336034-unsplash.jpg");
+  background-image: url("../Images/story1.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 .story-content .story-1:hover {
   transform: scale(1.2);
-  background-image: url("../Images/danny-postma-336034-unsplash.jpg");
+  background-image: url("../Images/story1.png");
   z-index: 1;
   box-shadow: 2px 2px 2px #507DBC;
 }
 .story-content .story-2 {
-  background-image: url("../Images/bruno-nascimento-255461-unsplash.jpg");
+  background-image: url("../Images/story2.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 .story-content .story-2:hover {
   transform: scale(1.2);
-  background-image: url("../Images/bruno-nascimento-255461-unsplash.jpg");
+  background-image: url("../Images/story2.png");
   z-index: 1;
   box-shadow: 2px 2px 2px #507DBC;
 }
 .story-content .story-3 {
-  background-image: url("../Images/bailey-torres-677237-unsplash.jpg");
+  background-image: url("../Images/story3.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 .story-content .story-3:hover {
   transform: scale(1.2);
-  background-image: url("../Images/bailey-torres-677237-unsplash.jpg");
+  background-image: url("../Images/story3.png");
   z-index: 1;
   box-shadow: 2px 2px 2px #507DBC;
 }
@@ -277,13 +277,28 @@ html body hr {
   justify-content: space-evenly;
 }
 .about-us .person {
-  border: 1px solid #2C406F;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   padding: 10px;
   width: 200px;
   height: 200px;
   margin: 20px 5px;
-  background-color: #507DBC;
-  color: #FBF5F3;
+  color: #011638;
+}
+.about-us .person img {
+  height: 150px;
+  border-radius: 50%;
+  transition: linear 0.1s;
+}
+.about-us .person img:hover {
+  box-shadow: 5px 5px 10px 1px #2C406F;
+  transform: scale(1.1);
+}
+.about-us .person p {
+  font-size: 0.7rem;
+  margin: 0;
+  color: #507DBC;
 }
 h2 {
   text-align: center;

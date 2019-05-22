@@ -3,15 +3,37 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     .person {
-        border: 1px solid #2C406F;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        // justify-content: space-around;
+        // border: 1px solid #2C406F;
         padding: 10px;
         width: 200px;
         height: 200px;
         margin: 20px 5px;
-        background-color: #507DBC;
-        color: #FBF5F3;         
+        // background-color: #507DBC;
+        color: #011638;   
+        
+        img {           
+            height: 150px;
+            border-radius: 50%;
+            transition: linear 0.1s;
+        }
+        img:hover {
+            box-shadow: 5px 5px 10px 1px #2C406F;
+            transform: scale(1.10);
+        }
+        p {
+            font-size: .7rem;
+            margin: 0;
+            color: #507DBC;
+        
+        }
+        
     }
 }
+
 h2 {
     text-align: center;
 }
