@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
-    <script src="JS/nav.js" async></script>
+    <script src="JS/global.js" async></script>
     <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
 
 </head>
@@ -36,36 +36,53 @@
 
     <h2>Meet the Team</h2>
 
+    <div class="tabs">
+        <div class="topics">
+          <span class="title">MEMBERS:</span>
+          <div data-person="all" class="tab active-tab">ALL</div>
+          <div data-person="ui" class="tab">UI</div>
+          <div data-person="ux" class="tab">UX</div>
+          <div data-person="be" class="tab">Backend</div>
+          <div data-person="pm" class="tab">PM</div>
+          <!-- -->
+        </div>
+    </div>
+
     <div class="about-us">
-        <div class="person" data-person="1">
+        <div class="person" data-person="ui">
             <img src="./Images/nate.png">
             <h3>Nate Magera</h3>
             <p>User Interface Dev</p>
         </div>
-        <div class="person" data-person="2">
+        <div class="person" data-person="ux">
             <img src="./Images/jalen.png">
             <h3>Jalen Hubbard</h3>
             <p>UX Dev</p>
         </div>
-        <div class="person" data-person="3">
+        <div class="person" data-person="pm">
             <img src="./Images/john.png">
             <h3>John B. Miranda</h3>
             <p>Project Lead</p>
         </div>
-        <div class="person" data-person="4">
+        <div class="person" data-person="be">
             <img src="./Images/amarachi.png">
             <h3>Amarachi Ejiawoko</h3>
             <p>Backend Dev</p>
         </div>
-        <div class="person" data-person="5">
+        <div class="person" data-person="pm">
             <img src="./Images/randy.png">
             <h3>Randy Wilson</h3>
             <p>Frontend Dev</p>
         </div>
-        <div class="person" data-person="6">
+        <div class="person" data-person="ui">
             <img src = "Images/justin.jpg">
             <h3>Justin Chen</h3>
             <p>User Interface Dev</p>
+        </div>
+        <div class="person" data-person="pm">
+            <img src = "Images/jamie.png">
+            <h3>Jamie Goodnight</h3>
+            <p>Justin's PM</p>
         </div>
 
     </div>

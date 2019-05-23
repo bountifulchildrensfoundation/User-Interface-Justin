@@ -6,13 +6,10 @@
         display: flex;
         flex-flow: column;
         align-items: center;
-        // justify-content: space-around;
-        // border: 1px solid #2C406F;
         padding: 10px;
         width: 200px;
         height: 200px;
         margin: 20px 5px;
-        // background-color: #507DBC;
         color: #011638;   
         
         img {           
@@ -37,3 +34,40 @@
 h2 {
     text-align: center;
 }
+
+.tabs {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height: 50px;
+
+    .topics {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+      .title {
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+      .tab {
+        color: white;
+        background-color: #2C406F;
+        border: 2px solid #011638;
+        margin: 0 5px;
+        padding: 2px 10px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .active-tab {
+        background-color: white;
+        color: #2C406F;
+        border: 2px solid black;
+      }
+    }
+  }
