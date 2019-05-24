@@ -45,7 +45,15 @@ class TabLink {
     // Map over the newly converted NodeList we just created in our if statement above. Convert each this.cards element into a new instance of the TabCard class. Pass in a card object to the TabCard class. 
     this.persons = Array.from(this.persons).map(element => new TabCard(element));
 
+    // this.tabElement.addEventListener("mouseover", function(){
+    //   this.tabElement.classList.style.backgroundColor = "black";
+    // });
+
     this.tabElement.addEventListener("click", () => this.selectTab());
+
+    this.tabElement.addEventListener("mouseover", () => this.changeTabs());
+    this.tabElement.addEventListener("mouseleave", () => this.changeTabs());
+
   }
 
   selectTab(){
@@ -66,6 +74,13 @@ class TabLink {
   
     // Notice we are looping through the this.cards array and invoking selectCard() from the TabCard class. Just un-comment the code and study what is happening here.
     this.persons.forEach(person => person.selectPerson());
+  }
+  changeTabs(){
+    // Toggle the "active-tab" class on your mouseover. 
+    const tabs = document.querySelectorAll(".tab");
+    this.tabElement.classList.toggle("active-tab")
+  
+  
   }
 }
 
