@@ -1,28 +1,22 @@
 class Dropdown {
   constructor(element) {
-    
-    // Assign this.element to the dropdown element
+  
     this.element = element
     
-    // Get the element with the ".dropdown-button" class found in the dropdown element (look at the HTML for context)
-    this.button = this.element.querySelector(".button");
     
-    // assign the reference to the ".dropdown-content" class found in the dropdown element
+    this.button = this.element.querySelector(".button");
+   
     this.content = this.element.querySelector(".drop-content");
     
-    // Add a click handler to the button reference and call the toggleContent method.
     this.button.addEventListener('click', () => this.toggleContent());
   }
 
   toggleContent() {
     
-    // Toggle the ".dropdown-hidden" class off and on
     this.content.classList.toggle("dropdown-hidden");
   }
 }
 
-
-// Nothing to do here, just study what the code is doing and move on to the Dropdown class
 let dropdown = document.querySelectorAll('.more-content').forEach( dropdown => new Dropdown(dropdown));
 
 
@@ -44,10 +38,6 @@ class TabLink {
     }
     // Map over the newly converted NodeList we just created in our if statement above. Convert each this.cards element into a new instance of the TabCard class. Pass in a card object to the TabCard class. 
     this.persons = Array.from(this.persons).map(element => new TabCard(element));
-
-    // this.tabElement.addEventListener("mouseover", function(){
-    //   this.tabElement.classList.style.backgroundColor = "black";
-    // });
 
     this.tabElement.addEventListener("click", () => this.selectTab());
 
